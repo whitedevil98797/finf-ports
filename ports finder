@@ -1,0 +1,8 @@
+import subprocess  #for port numbers
+
+your_ip = input("your own ip ")
+
+subprocess.run (["nmap","-A","-vv",your_ip,"-Pn"])
+
+
+print("you got the port numbers")
